@@ -1,0 +1,46 @@
+<div id="novo-automato" class="novo-item">
+  <div class="titulo">
+    Novo Autômato
+  </div>
+  <br />
+  <form onsubmit="event.preventDefault(); novoAutomato()">
+    <div id="propriedades">
+      <div class="col1">
+        <div class="lin1">
+          Nome:
+        </div>
+      </div>
+      <div class="col2">
+        <div class="lin1">
+          <input type="text" name="nome-automato" required />
+        </div>
+      </div>
+      <div class="col1">
+        <div class="lin2">
+          Estado Inicial:
+        </div>
+      </div>
+      <div class="col2">
+        <div class="lin2">
+          <input type="text" name="estado-inicial" onkeydown="semEspaco(event)" required />
+        </div>
+      </div>
+      <div class="col1">
+        <div class="lin3">
+          Estados Finais:
+        </div>
+      </div>
+      <div class="col2">
+        <div class="lin3">
+          <input type="text" name="estados-finais" required />
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 10px;">
+      Definir Transições:
+    </div>
+    <textarea name="definicao-automato"></textarea>
+    <br />
+    <input type="submit" value="Confirmar" onclick="" />
+  </form>
+</div>

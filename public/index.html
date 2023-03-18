@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Linguagens Formais
+    </title>
+    <link rel="icon" href="img/icone.png" />
+    <link href="css/estilo.css" type="text/css" rel="stylesheet">
+    <script src="js/script.js" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <section>
+      <div id="topo">
+        <div class="titulo">
+          Linguagens Formais
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a onclick="inicio()">Inicio</a></li>
+            <li>
+              <a>Novo</a>
+              <ul>
+                <li><a onclick="alterarPainelCentral(0)">Autômato</a></li>
+                <li><a onclick="alterarPainelCentral(2)">Gramática</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Operação</a>
+              <ul>
+                <li><a>União</a></li>
+                <li><a>Intersecção</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="painel">
+        <div id="painel-lateral">
+          <div class="titulo">
+            Itens Adicionados
+          </div>
+          <div id="itens">
+          </div>
+          <script type="text/javascript">
+            listaItens()
+          </script>
+        </div>
+        <div id="painel-central">
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

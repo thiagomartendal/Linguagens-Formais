@@ -1,0 +1,363 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+section #topo {
+  background-color: #2F4F4F;
+  font-size: 30px;
+  padding: 5px;
+  padding-left: 100px;
+  height: 70px;
+  color: white;
+}
+
+section #topo .titulo {
+  padding-top: 15px;
+}
+
+section #topo nav {
+  display: flex;
+  justify-content: center;
+  margin-top: -15px;
+  /* margin-top: 30px; */
+}
+
+section #topo nav .menu {
+  list-style: none;
+}
+
+section #topo nav .menu li {
+  position: relative;
+  float: left;
+  width: 200px;
+  text-align: center;
+}
+
+section #topo nav .menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 25px;
+  display: block;
+  cursor: pointer;
+}
+
+section #topo nav .menu li:hover {
+  /* background-color: white; */
+  color: #008B8B;
+}
+
+section #topo nav .menu li a:hover {
+  /* color: #008B8B; */
+  color: #ccc;
+}
+
+section #topo nav .menu li ul {
+  position: absolute;
+  display: none;
+}
+
+section #topo nav .menu li:hover ul, section nav .menu li.over ul {
+  display: block;
+}
+
+section #topo nav .menu li ul {
+  border-left: 1px solid #2F4F4F;
+  border-right: 1px solid #2F4F4F;
+  border-bottom: 1px solid #2F4F4F;
+  /* background-color: #2F4F4F; */
+  background-color: white;
+  margin-top: -1px;
+}
+
+section #topo nav .menu li ul li {
+  display: block;
+  width: 100%;
+}
+
+section #topo nav .menu li ul li:hover {
+  background-color: #2F4F4F;
+}
+
+section #topo nav .menu li ul li a {
+  color: #2F4F4F;
+  cursor: pointer;
+}
+
+section #topo nav .menu li ul li a:hover {
+  color: white;
+}
+
+section #painel {
+  display: grid;
+  grid-template-columns: 305px auto;
+}
+
+section #painel-lateral {
+  border-right: 2px solid #2F4F4F;
+  width: 300px;
+  height: calc(100vh - 80px);
+  grid-row: 1;
+  grid-column: 1
+}
+
+section #painel-lateral .titulo {
+  padding-left: 20px;
+  padding-top: 5px;
+  font-size: 25px;
+}
+
+section #painel-lateral #itens {
+  padding-top: 5px;
+}
+
+section #painel-lateral #itens .item {
+  border: 1px solid #2F4F4F;
+  background-color: #2F4F4F;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  /* padding: 5px; */
+  width: 270px;
+  margin: 0px auto;
+  margin-top: 5px;
+  /* cursor: pointer; */
+}
+
+section #painel-lateral #itens .item:hover {
+  border: 1px solid #2F4F4F;
+  background-color: white;
+  color: #2F4F4F;
+}
+
+section #painel-lateral #itens .item .nome-item, section #painel-lateral #itens .item-acessado .nome-item {
+  padding: 5px;
+  cursor: pointer;
+}
+
+section #painel-lateral #itens .item-acessado .nome-item:hover {
+  background-color: #2F4F4F;
+  color: white;
+}
+
+section #painel-lateral #itens .item-acessado {
+  border: 1px solid #2F4F4F;
+  background-color: white;
+  color: #2F4F4F;
+  font-size: 18px;
+  text-align: center;
+  /* padding: 5px; */
+  width: 270px;
+  margin: 0px auto;
+  margin-top: 5px;
+  /* cursor: pointer; */
+}
+
+section #painel-lateral #itens .item-acessado .menu-item .botao {
+  border: 1px solid white;
+  background-color: white;
+  color: #2F4F4F;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+}
+
+section #painel-lateral #itens .item-acessado .menu-item .botao:hover {
+  border: 1px solid #2F4F4F;
+  background-color: #2F4F4F;
+  color: white;
+}
+
+section #painel-central {
+  height: calc(100vh - 80px);
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+section #painel-central .titulo {
+  padding-top: 5px;
+  font-size: 25px;
+}
+
+section #painel-central .novo-item form textarea {
+  border: 1px solid #2F4F4F;
+  resize: none;
+  width: 800px;
+  height: 350px;
+  margin: 10px;
+  padding: 5px;
+  outline: none;
+}
+
+section #painel-central .novo-item #propriedades {
+  display: grid;
+  width: 450px;
+  margin: 0px auto;
+}
+
+section #painel-central .novo-item #propriedades .lin1 {
+  grid-row: 1;
+  padding: 5px;
+}
+
+section #painel-central .novo-item #propriedades .lin2 {
+  grid-row: 2;
+  padding: 5px;
+}
+
+section #painel-central .novo-item #propriedades .lin3 {
+  grid-row: 3;
+  padding: 5px;
+}
+
+section #painel-central .novo-item #propriedades .col1 {
+  grid-column: 1;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section #painel-central .novo-item #propriedades .col2 {
+  grid-column: 2;
+}
+
+section #painel-central .novo-item #propriedades input[type="text"] {
+  border: 1px solid #2F4F4F;
+  outline: none;
+  width: 200px;
+  padding: 5px;
+}
+
+section #painel-central #computar-sentenca {
+  max-width: 1000px;
+  overflow-x: hidden;
+}
+
+section #painel-central #computar-sentenca input[type="text"] {
+  border: 1px solid #2F4F4F;
+  outline: none;
+  width: 800px;
+  padding: 5px;
+}
+
+section #painel-central #computar-sentenca #arvore-computacao {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+section #painel-central #exibicao-automato {
+  margin: 10px;
+}
+
+section #painel-central #exibicao-automato #nome-automato {
+  padding: 5px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+section #painel-central #exibicao-automato #divTabela {
+  margin: 10px;
+  max-width: 1000px;
+  overflow-x: auto;
+}
+
+section #painel-central #exibicao-automato #exibicao-tabela table {
+  border: 1px solid black;
+}
+
+section #painel-central #exibicao-automato #exibicao-tabela table tr td {
+  border: 1px solid black;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+section #painel-central #exibicao-automato #exibicao-tabela table tr .c0 {
+  font-weight: bold;
+}
+
+section #painel-central #exibicao-automato #exibicao-tabela table tr .inicial {
+  color: blue;
+}
+
+section #painel-central #exibicao-automato #exibicao-tabela table tr .inicial-final {
+  color: green;
+}
+
+section #painel-central #exibicao-automato #exibicao-tabela table tr .final {
+  color: red;
+}
+
+section #painel-central form input[type="submit"], section #painel-central form input[type="button"] {
+  border: 1px solid #2F4F4F;
+  background-color: #2F4F4F;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+section #painel-central form input[type="submit"]:hover, section #painel-central form input[type="button"]:hover {
+  border: 1px solid #2F4F4F;
+  background-color: white;
+  color: #2F4F4F;
+  font-size: 18px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+section .lightbox {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease-in;
+}
+
+section .lightbox.show {
+    background-color: rgba(0,0,0, 0.85);
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000;
+}
+
+section .lightbox .conteudo {
+  border: 2px solid #2F4F4F;
+  background-color: white;
+  padding: 15px;
+  font-size: 25px;
+  text-align: center;
+}
+
+section .lightbox .conteudo input[type="button"] {
+  border: 1px solid #2F4F4F;
+  background-color: #2F4F4F;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+section .lightbox .conteudo input[type="button"]:hover {
+  border: 1px solid #2F4F4F;
+  background-color: white;
+  color: #2F4F4F;
+  font-size: 18px;
+  padding: 5px;
+  cursor: pointer;
+}

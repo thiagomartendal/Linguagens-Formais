@@ -1,0 +1,46 @@
+<div id="nova-gramatica" class="novo-item">
+  <div class="titulo">
+    Nova Gramática
+  </div>
+  <br />
+  <form onsubmit="event.preventDefault(); novaGramatica()">
+    <div id="propriedades">
+      <div class="col1">
+        <div class="lin1">
+          Nome:
+        </div>
+      </div>
+      <div class="col2">
+        <div class="lin1">
+          <input type="text" name="nome-gramatica" required />
+        </div>
+      </div>
+      <div class="col1">
+        <div class="lin2">
+          Simbolos Terminais:
+        </div>
+      </div>
+      <div class="col2">
+        <div class="lin2">
+          <input type="text" name="simbolos-terminais" onkeydown="" required />
+        </div>
+      </div>
+      <div class="col1">
+        <div class="lin3">
+          Simbolos Não-Terminais:
+        </div>
+      </div>
+      <div class="col2">
+        <div class="lin3">
+          <input type="text" name="simbolos-nao-terminais" required />
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 10px;">
+      Definir Gramática:
+    </div>
+    <textarea name="definicao-gramatica"></textarea>
+    <br />
+    <input type="submit" value="Confirmar" onclick="" />
+  </form>
+</div>
